@@ -1,0 +1,23 @@
+.zoomable-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .zoomable-image:hover {
+        transform: scale(1.2); /* Adjust the scale factor for smaller screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .zoomable-image:hover {
+        transform: scale(1.1); /* Adjust the scale factor for medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .zoomable-image:hover {
+        transform: scale(1.5); /* Adjust the scale factor for larger screens */
+    }
+}
